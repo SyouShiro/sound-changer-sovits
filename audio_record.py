@@ -106,7 +106,7 @@ if __name__ == "__main__":
             SAVE_FILE = False
 
             # call to push
-            process = subprocess.Popen(["python", "output_to_mic.py"], shell=True)
+            subprocess.Popen(["python", "output_to_mic.py"])
 
             # o2m.send2Change()
 
