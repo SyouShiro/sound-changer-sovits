@@ -1,0 +1,6 @@
+numpy
+keyboard
+soundfile
+sounddevice
+requests
+argparse

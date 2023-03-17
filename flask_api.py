@@ -101,9 +101,7 @@ if __name__ == '__main__':
 
     # 每个模型和config是唯一对应的
     model_name = path2Model + actor_name + "/" + actor_name + ".pth"
-    config_name = path2Model + actor_name + "/" + "config.json" 
-    # model_name = "D:/sound_changer/so-vits-svc/models/tannhuaser/tannhauser.pth"
-    # config_name = "D:/sound_changer/so-vits-svc/models/tannhuaser/config.json"
+    config_name = path2Model + actor_name + "/" + "config.json"
     svc_model = Svc(model_name, config_name, 'cuda')
 
     # 此处与vst插件对应，不建议更改
