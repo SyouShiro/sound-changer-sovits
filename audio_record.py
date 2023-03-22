@@ -5,6 +5,7 @@ import time
 import keyboard
 import json
 import subprocess
+import output_to_mic as o2m
 
 # Open the JSON file and load settings
 with open('settings.config', 'r') as file:
@@ -106,9 +107,9 @@ if __name__ == "__main__":
             SAVE_FILE = False
 
             # call to push
-            subprocess.Popen(["python", "output_to_mic.py"])
+            # subprocess.Popen(["python", "output_to_mic.py"])
 
-            # o2m.send2Change()
+            o2m.send2Change()
 
 
 
